@@ -110,3 +110,28 @@ color: #562EFF;
 .fa-star.empty{
     color:#AEAEAE;
 }
+/* MEDIA QUERY */
+@media only screen and (max-width:668px){
+    .container{
+        width: 100%;
+    }
+    .players , .blogs , .courses {
+        background-color: cadetblue;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .player , .blog {
+        flex-direction: column;
+    }
+}
+
+/* TABLET DEVICES */
+
+@media only screen and (min-width:668px) and (max-width:992px){
+    .players , .courses{
+        background-color: blueviolet;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
